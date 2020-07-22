@@ -233,12 +233,16 @@ struct VideoView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @ObservedObject var videolistImageURL = RemoteImageURL()
     
+    // index for currently playing video
+    @State var currentIndex = -1
+    
     var body: some View {
         VStack {
             HStack {
                 Button(" Back "){
                     self.viewRouter.currentPage = 3
                     YtTool.instance.resetVideoList()
+                    MusicPlayer.instance.resetPlayer()
                 }
                 .padding()
                 .font(Font.system(size: 24, design: .default))
@@ -252,8 +256,10 @@ struct VideoView: View {
                 }
                 
                 Button(" Next "){
-                    
-                    //MusicPlayer.instance.player.play()
+                    if self.currentIndex >= 0 {
+                        self.currentIndex += 1
+                        MusicPlayer.instance.player.advanceToNextItem()
+                    }
                 }
                 .padding()
                 .font(Font.system(size: 24, design: .default))
@@ -275,6 +281,7 @@ struct VideoView: View {
                     .frame(width: 200, height: 90)
                     
                     Button(""){
+                        self.currentIndex = video.id
                         YtTool.instance.videoId = video.dict["id"] as! String
                         MusicPlayer.instance.playMusic(videoId: YtTool.instance.videoId)
                         YtTool.instance.group.notify(queue: .main){
@@ -286,10 +293,19 @@ struct VideoView: View {
                     .frame(width: 330, height: 80)
                     
                 }
-                .background(video.id % 2 == 0 ? Color(red: 0.5, green: 0.5, blue: 0.5) : Color(red: 0.8, green: 0.8, blue: 0.8))
+                .background(self.getItemColor(id: video.id))
             }
         }
     }
+    
+    func getItemColor(id: Int) -> Color {
+        if id == currentIndex {
+            return Color.orange
+        }
+        
+        return id % 2 == 0 ? Color(red: 0.5, green: 0.5, blue: 0.5) : Color(red: 0.8, green: 0.8, blue: 0.8)
+    }
+    
     // update the video for next page
     func updateNextPage(){
         YtTool.instance.getVideolist(nextToken: true)

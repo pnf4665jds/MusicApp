@@ -42,29 +42,6 @@ class MusicPlayer: NSObject {
         var targetURL: String!
         targetURL = "https://www.youtube.com/watch?v=\(videoId)"
         
-        //targetURL = "https://www.youtubeto.com?task=MP3&url=" + targetURL
-        
-        //targetURL = "https://www.ytmp3.mobi/#\(url)|mp3|1abc9c|ffffff"
-        /*targetURL = targetURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        YtTool.instance.performGetRequest(targetURL: URL(string: targetURL), completion: { (data, HTTPStatusCode, error) -> Void in
-            // if successfully get response without error
-            if HTTPStatusCode == 200 && error == nil {
-                do {
-                    //let resultDict = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! Dictionary<String, AnyObject>
-                    //let resultDict = String(contentsOf: data)
-                    //print(resultDict)
-                }
-                catch {
-                    print(error)
-                }
-                
-            }
-            else {
-                // print error message
-                print("HTTP Status Code = \(HTTPStatusCode)")
-                print("Error while loading channel details: \(error)")
-            }
-        })*/
         let url = URL(string: targetURL)!
         var streamUrl = URL(string: "")
         /*URLSession.shared.dataTask(with: url) { (datatmp, response, error) in
@@ -97,9 +74,11 @@ class MusicPlayer: NSObject {
         })
 
     }
-        
-    func update() {
-        
+    
+    // reset AVQueuePlayer
+    func resetPlayer() {
+        player.pause()
+        player.removeAllItems()
     }
     
     // get and parse html from youtube
