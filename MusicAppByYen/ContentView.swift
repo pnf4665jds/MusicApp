@@ -283,6 +283,7 @@ struct VideoView: View {
                     Button(""){
                         self.currentIndex = video.id
                         YtTool.instance.videoId = video.dict["id"] as! String
+                        MusicPlayer.instance.resetPlayer()
                         MusicPlayer.instance.playMusic(videoId: YtTool.instance.videoId)
                         YtTool.instance.group.notify(queue: .main){
                             for i in (video.id + 1) ..< YtTool.instance.videoListSize() {
