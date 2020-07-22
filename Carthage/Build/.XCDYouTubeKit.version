@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "XCDYouTubeKit",
+      "hash" : "8290a103cfb126578727abf3fedda489043779fb94997a0f5023602d63ef0002",
+      "linking" : "dynamic"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "XCDYouTubeKit",
+      "hash" : "fac9d863f5ba06e894a40808dddaaa96c46d6e8eaa520422145f30a449992e2a",
+      "linking" : "dynamic"
+    }
+  ],
+  "commitish" : "2.14.0",
+  "iOS" : [
+    {
+      "name" : "XCDYouTubeKit",
+      "hash" : "6572398de0f61fa3ffb8c115fb6c59efa26b36d065249883ac1d24768db9f0f6",
+      "linking" : "dynamic"
+    }
+  ]
+}

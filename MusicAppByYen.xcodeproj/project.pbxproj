@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEDFDF5D24C750E80035C50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFDF5C24C750E80035C50F /* AppDelegate.swift */; };
-		AEDFDF5F24C750E80035C50F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFDF5E24C750E80035C50F /* SceneDelegate.swift */; };
-		AEDFDF6124C750E80035C50F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFDF6024C750E80035C50F /* ContentView.swift */; };
 		AEDFDF6324C750EB0035C50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDFDF6224C750EB0035C50F /* Assets.xcassets */; };
 		AEDFDF6624C750EB0035C50F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDFDF6524C750EB0035C50F /* Preview Assets.xcassets */; };
 		AEDFDF6924C750EB0035C50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDFDF6724C750EB0035C50F /* LaunchScreen.storyboard */; };
+		AEFFB88624C7E44300DA5B58 /* YtTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB87F24C7E44300DA5B58 /* YtTool.swift */; };
+		AEFFB88724C7E44300DA5B58 /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88024C7E44300DA5B58 /* RemoteImageURL.swift */; };
+		AEFFB88824C7E44300DA5B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88124C7E44300DA5B58 /* SceneDelegate.swift */; };
+		AEFFB88924C7E44300DA5B58 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88224C7E44300DA5B58 /* MusicPlayer.swift */; };
+		AEFFB88A24C7E44300DA5B58 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88324C7E44300DA5B58 /* ViewRouter.swift */; };
+		AEFFB88B24C7E44300DA5B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88424C7E44300DA5B58 /* ContentView.swift */; };
+		AEFFB88C24C7E44300DA5B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFB88524C7E44300DA5B58 /* AppDelegate.swift */; };
+		AEFFB88F24C7E5BB00DA5B58 /* XCDYouTubeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFFB88E24C7E5BB00DA5B58 /* XCDYouTubeKit.framework */; };
+		AEFFB89024C7E5BB00DA5B58 /* XCDYouTubeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEFFB88E24C7E5BB00DA5B58 /* XCDYouTubeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEFFB89124C7E5BB00DA5B58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEFFB89024C7E5BB00DA5B58 /* XCDYouTubeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AEDFDF5924C750E80035C50F /* MusicAppByYen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAppByYen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEDFDF5C24C750E80035C50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEDFDF5E24C750E80035C50F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEDFDF6024C750E80035C50F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEDFDF6224C750EB0035C50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEDFDF6524C750EB0035C50F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEDFDF6824C750EB0035C50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEDFDF6A24C750EB0035C50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFFB87E24C7E44200DA5B58 /* MusicAppByYen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicAppByYen-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEFFB87F24C7E44300DA5B58 /* YtTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YtTool.swift; sourceTree = "<group>"; };
+		AEFFB88024C7E44300DA5B58 /* RemoteImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
+		AEFFB88124C7E44300DA5B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AEFFB88224C7E44300DA5B58 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		AEFFB88324C7E44300DA5B58 /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		AEFFB88424C7E44300DA5B58 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEFFB88524C7E44300DA5B58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEFFB88E24C7E5BB00DA5B58 /* XCDYouTubeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCDYouTubeKit.framework; path = Carthage/Build/iOS/XCDYouTubeKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFFB88F24C7E5BB00DA5B58 /* XCDYouTubeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +69,7 @@
 			children = (
 				AEDFDF5B24C750E80035C50F /* MusicAppByYen */,
 				AEDFDF5A24C750E80035C50F /* Products */,
+				AEFFB88D24C7E5BA00DA5B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +84,18 @@
 		AEDFDF5B24C750E80035C50F /* MusicAppByYen */ = {
 			isa = PBXGroup;
 			children = (
-				AEDFDF5C24C750E80035C50F /* AppDelegate.swift */,
-				AEDFDF5E24C750E80035C50F /* SceneDelegate.swift */,
-				AEDFDF6024C750E80035C50F /* ContentView.swift */,
+				AEFFB88524C7E44300DA5B58 /* AppDelegate.swift */,
+				AEFFB88424C7E44300DA5B58 /* ContentView.swift */,
+				AEFFB88224C7E44300DA5B58 /* MusicPlayer.swift */,
+				AEFFB88024C7E44300DA5B58 /* RemoteImageURL.swift */,
+				AEFFB88124C7E44300DA5B58 /* SceneDelegate.swift */,
+				AEFFB88324C7E44300DA5B58 /* ViewRouter.swift */,
+				AEFFB87F24C7E44300DA5B58 /* YtTool.swift */,
 				AEDFDF6224C750EB0035C50F /* Assets.xcassets */,
 				AEDFDF6724C750EB0035C50F /* LaunchScreen.storyboard */,
 				AEDFDF6A24C750EB0035C50F /* Info.plist */,
 				AEDFDF6424C750EB0035C50F /* Preview Content */,
+				AEFFB87E24C7E44200DA5B58 /* MusicAppByYen-Bridging-Header.h */,
 			);
 			path = MusicAppByYen;
 			sourceTree = "<group>";
@@ -75,6 +108,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AEFFB88D24C7E5BA00DA5B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFB88E24C7E5BB00DA5B58 /* XCDYouTubeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +126,8 @@
 				AEDFDF5524C750E80035C50F /* Sources */,
 				AEDFDF5624C750E80035C50F /* Frameworks */,
 				AEDFDF5724C750E80035C50F /* Resources */,
+				AEFFB89124C7E5BB00DA5B58 /* Embed Frameworks */,
+				AEFFB89224C7E5CE00DA5B58 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -107,6 +150,7 @@
 				TargetAttributes = {
 					AEDFDF5824C750E80035C50F = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -141,14 +185,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AEFFB89224C7E5CE00DA5B58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XCDYouTubeKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEDFDF5524C750E80035C50F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDFDF5D24C750E80035C50F /* AppDelegate.swift in Sources */,
-				AEDFDF5F24C750E80035C50F /* SceneDelegate.swift in Sources */,
-				AEDFDF6124C750E80035C50F /* ContentView.swift in Sources */,
+				AEFFB88A24C7E44300DA5B58 /* ViewRouter.swift in Sources */,
+				AEFFB88624C7E44300DA5B58 /* YtTool.swift in Sources */,
+				AEFFB88B24C7E44300DA5B58 /* ContentView.swift in Sources */,
+				AEFFB88724C7E44300DA5B58 /* RemoteImageURL.swift in Sources */,
+				AEFFB88C24C7E44300DA5B58 /* AppDelegate.swift in Sources */,
+				AEFFB88924C7E44300DA5B58 /* MusicPlayer.swift in Sources */,
+				AEFFB88824C7E44300DA5B58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +353,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MusicAppByYen/Preview Content\"";
 				DEVELOPMENT_TEAM = 5YLS72G2VB;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MusicAppByYen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +369,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MusicAppByYen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicAppByYen/MusicAppByYen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,10 +380,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MusicAppByYen/Preview Content\"";
 				DEVELOPMENT_TEAM = 5YLS72G2VB;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MusicAppByYen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MusicAppByYen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicAppByYen/MusicAppByYen-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  MusicAppByYen
+//  FirstAppByYen
 //
-//  Created by YenChang on 2020/7/21.
+//  Created by YenChang on 2020/7/4.
 //  Copyright © 2020 YenChang. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowAirPlay])
+        try? AVAudioSession.sharedInstance().setActive(true)
+        
         return true
     }
 
