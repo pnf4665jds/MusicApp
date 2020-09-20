@@ -8,5 +8,5 @@ Currently runnable below iOS 13.5.
 
 ## Tools
 
-*YouTube Data API
-*XCDYouTubeKit
+*   YouTube Data API
+*   XCDYouTubeKit
